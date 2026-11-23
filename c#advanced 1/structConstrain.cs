@@ -67,5 +67,18 @@ namespace c_advanced_1
         class Student : Human
         {
         }
+        //answer 12
+        //ايوه نقدر نحط اكتر من شرط مثلا انها تمون وراثه من كلاس معين 
+        // او انها تعلمل impelment ل interface معين
+        //او انها تعمل باراميتر ليس كونستراتور
+
+        class MyClass<T> where T : Person, IPrintable, new()
+        {
+            public void Display(T obj)
+            {
+                obj.Print();
+            }
+        }
     }
+
 }
