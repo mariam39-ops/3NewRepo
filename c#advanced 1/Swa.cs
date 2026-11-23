@@ -12,5 +12,19 @@ namespace c_advanced_1
         {
             Console.WriteLine(value);
         }
+     //answer 5
+            static T FindMax<T>(T x, T y) where T : IComparable<T>
+            {
+                if (x.CompareTo(y) > 0)
+                {
+                    return x;
+                }
+                else
+                {
+                    return y;
+                }
+            }
+        }
     }
-}
+
+
