@@ -89,5 +89,20 @@ namespace c_advanced_1
             return default(T);
         }
     }
+    //answer 14
+    class SafeList<T>
+    {
+        T[] items = new T[5];
+
+        public T Get(int index)
+        {
+            if (index < items.Length && index >= 0)
+            {
+                return items[index];
+            }
+
+            return default(T);
+        }
+    }
 
 }
