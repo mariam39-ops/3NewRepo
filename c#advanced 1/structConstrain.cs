@@ -51,6 +51,21 @@ namespace c_advanced_1
             {
                 Console.WriteLine("this person");
             }
+        }//answer 11
+        // يعني احنا بنشترط علي الجينارك كلاس يكون وارث من كلاس معيه يعني اي كلاس هنحطه مكان الt لازم يكون ورات من الكلاس دي
+        class Human
+        {
+            public string Name;
+        }
+        class MClass<T> where T : Human
+        {
+            public void Print(T obj)
+            {
+                Console.WriteLine(obj.Name);
+            }
+        }
+        class Student : Human
+        {
         }
     }
 }
