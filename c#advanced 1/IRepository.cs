@@ -12,4 +12,5 @@ namespace c_advanced_1
 
         void Delete(int id);
     }
+    
 }
