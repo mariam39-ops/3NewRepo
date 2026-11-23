@@ -27,6 +27,14 @@ namespace c_advanced_1
             {
                 Value =c;
             }
+        }// answer 9
+        // ده معناه اني لازم اعمل كونستراكتور براميتر ليس  علشان اعرف اعمل منه اوبجيكت باستخدام الكيورد new
+        class Class<T> where T : new()
+        {
+            public T CreateNewObject()
+            {
+                return new T();
+            }
         }
     }
 }
