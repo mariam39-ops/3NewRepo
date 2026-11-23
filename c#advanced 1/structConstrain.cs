@@ -80,5 +80,14 @@ namespace c_advanced_1
             }
         }
     }
+    //q13 
+    //بترجع القيمه الافتراضيه  لنوع البيانات الوجوده فى الt يعني مثلا لوهيا int ترجع صفر
+    class DefaltClass<T>
+    {
+        public T GetDefault()
+        {
+            return default(T);
+        }
+    }
 
 }
