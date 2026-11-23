@@ -104,5 +104,8 @@ namespace c_advanced_1
             return default(T);
         }
     }
+    // answer 15 
+    /// covarinese : بتخلي عادي استخدم النوع الابن مكان الاب زي الanimal ,dog اقدر استخدم الdogمكان الاب  وده بنعمله
+    /// عن طريف كيورد اسمها out
 
 }
