@@ -36,5 +36,21 @@ namespace c_advanced_1
                 return new T();
             }
         }
+        //answer 10 
+        // ده معناه اننا بنشترط على اي جينارك كلاس  مطبق الinterface اي كلاس تاني  هنستخدمها مكان الT لازم تكون عامل امبيلمنت لل انترفيس
+        class Intercon<T> where T : IPrintable
+        {
+            public void Display(T obj)
+            {
+                obj.Print();
+            }
+        }
+        class Person : IPrintable
+        {
+            public void Print()
+            {
+                Console.WriteLine("this person");
+            }
+        }
     }
 }
