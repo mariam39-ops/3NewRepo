@@ -17,5 +17,16 @@ namespace c_advanced_1
                 Value = n;
             }
         }
+        //answer 8
+        //ده معناها بقى اني بجبر الجينارك بقى يبقى ريفرنس تانيب مينفعش يبقي value
+        class Cconstrains<T> where T : class
+        {
+            public T Value;
+
+            public void Add(T c)
+            {
+                Value =c;
+            }
+        }
     }
 }
